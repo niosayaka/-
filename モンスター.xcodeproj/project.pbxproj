@@ -12,6 +12,9 @@
 		5D65A3FE20C7C3C000644F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D65A3FC20C7C3C000644F75 /* Main.storyboard */; };
 		5D65A40020C7C3C000644F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D65A3FF20C7C3C000644F75 /* Assets.xcassets */; };
 		5D65A40320C7C3C000644F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D65A40120C7C3C000644F75 /* LaunchScreen.storyboard */; };
+		5D65A40B20C7CCD700644F75 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D65A40A20C7CCD700644F75 /* image1.jpg */; };
+		5D65A40D20C7CCDE00644F75 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D65A40C20C7CCDD00644F75 /* image2.jpg */; };
+		5D65A40F20C7CCE200644F75 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D65A40E20C7CCE200644F75 /* image3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		5D65A3FF20C7C3C000644F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D65A40220C7C3C000644F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D65A40420C7C3C000644F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D65A40A20C7CCD700644F75 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		5D65A40C20C7CCDD00644F75 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		5D65A40E20C7CCE200644F75 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,9 @@
 			children = (
 				5D65A3F720C7C3C000644F75 /* モンスター */,
 				5D65A3F620C7C3C000644F75 /* Products */,
+				5D65A40A20C7CCD700644F75 /* image1.jpg */,
+				5D65A40C20C7CCDD00644F75 /* image2.jpg */,
+				5D65A40E20C7CCE200644F75 /* image3.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +133,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D65A40320C7C3C000644F75 /* LaunchScreen.storyboard in Resources */,
+				5D65A40F20C7CCE200644F75 /* image3.png in Resources */,
+				5D65A40D20C7CCDE00644F75 /* image2.jpg in Resources */,
+				5D65A40B20C7CCD700644F75 /* image1.jpg in Resources */,
 				5D65A40020C7C3C000644F75 /* Assets.xcassets in Resources */,
 				5D65A3FE20C7C3C000644F75 /* Main.storyboard in Resources */,
 			);
@@ -277,7 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "モンスター/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.-----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -291,7 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "モンスター/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.-----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
