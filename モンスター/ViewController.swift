@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     }
     
     func displayImage() {
-        
+       
         let imageNameArray = [
         "image1.jpg",
         "image2.jpg",
