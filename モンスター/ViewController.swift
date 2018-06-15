@@ -10,74 +10,51 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var imageview:UIImageView!
-    @IBOutlet var label:UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var label: UILabel!
     
-    var dispImageNo = 0
-    
-    @IBAction func next(_sender: AnyObject){
-        
-        dispImageNo += 1
-        
-        displayImage()
-        
-    }
-    
-    @IBAction func back(_sender: AnyObject){
-        
-        dispImageNo -= 1
-        
-        displayImage()
-        
-    }
-    
-    func displayImage() {
-       
-        let imageNameArray = [
-        "image1.jpg",
-        "image2.jpg",
-        "image3.jpg",
-        ]
-        
-        if dispImageNo < 0 {
-            dispImageNo = 2
-            
-        }
-        
-        if dispImageNo > 2 {
-            dispImageNo = 0
-        }
-        
-        let name = imageNameArray[dispImageNo]
-        
-        let image = UIImage(named: name)
-        if dispImageNo == 0 {
-            label.text = "黒沢さん"
-            
-        }else if dispImageNo == 1 {
-            label.text = "三沢さん"
-            
-        }else if dispImageNo == 2 {
-            label.text = "大沢さん"
-        }
-        
-        imageview.image = image
-    }
+    var monster: [Monster] = []
+    var number : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        let image = UIImage(named: "image1")
-        imageview.image = image
+        let monster1 = Monster()
+        monster1.image = UIImage(named: "image1.jpg")
+        monster1.name = "黒沢さん"
+        
+        let monster2 = Monster()
+        monster2.image = UIImage(named: "image2.jpg")
+        monster2.name = "三沢さん"
+        
+        let monster3 = Monster()
+        monster3.image = UIImage(named: "image3.jpg")
+        monster3.name = "大沢さん"
+        
+        monster = [monster1, monster2, monster3]
+        
+        let image = UIImage(named: "image1.jpg")
+        label.text = monster1.name
+        //最初の画像
+        imageView.image = image
+        
     }
-
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func next(_ sender: Any) {
+        number += 1
+        if number > 2 {
+            number = 0
+        }
+        label.text = monster[number].name
+        imageView.image = monster[number].image
     }
-
-
+    
+    @IBAction func back(_ sender: Any) {
+        number -= 1
+        if number < 0 {
+            number = 2
+        }
+        label.text = monster[number].name
+        imageView.image = monster[number].image
+        
 }
-
