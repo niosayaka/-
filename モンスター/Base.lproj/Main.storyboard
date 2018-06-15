@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <action selector="nextWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a2Z-Yv-j2v"/>
+                                    <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qSz-nz-XYE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhq-gs-Unf">
@@ -31,7 +31,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <action selector="backWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q8P-o8-9Yn"/>
+                                    <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="afg-WM-am2"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="o20-x9-Kbh">
@@ -50,7 +50,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="imageview" destination="o20-x9-Kbh" id="nJH-fK-etF"/>
+                        <outlet property="imageView" destination="o20-x9-Kbh" id="EWh-7q-G9h"/>
                         <outlet property="label" destination="Sog-Yv-LuR" id="2Ex-sA-JoY"/>
                     </connections>
                 </viewController>
